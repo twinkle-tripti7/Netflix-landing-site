@@ -1,0 +1,108 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+background-color:#c8cfcdd6;
+}
+
+.heading-style{ 
+  box-sizing: border-box;
+  padding:30px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  font-size:13px;
+  color:#3a2a2ad3;
+  font-size:13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  width:100vw;
+  margin:0;
+  background-color: #ffffff;
+  
+}
+
+img:hover{
+cursor:pointer;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Display three cards in a row */
+  gap: 20px; /* Add some gap between cards */
+  justify-content: center; /* Center the grid horizontally */
+}
+
+/* For smaller screens, display two cards in a row */
+@media (max-width: 768px) {
+  .card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.cards {
+  margin: 100px;
+  
+}
+
+.card {
+ margin:40px;
+ width:300px;
+ transition: all 0.4s cubic-bezier(0.175, 0.885, 0,1);
+ border-radius: 12px;
+ box-shadow: 10px 13px 10px -7px rgba(223, 190, 190, 0.859);
+  background-color: #fff;
+  float: left;
+}
+
+.card:hover{
+box-shadow:30px 30px 18px -8px rgba(167, 128, 128, 0.395);
+transform:scale(1.05,1.05);
+}
+
+
+.card_img {
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card_info {
+  padding: 11px 24px 24px 24px;
+  background-color: azure;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+}
+
+.card_title {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  letter-spacing:1px;
+  color:#7d6d6d;
+
+}
+.card_sname{
+  font-size: 1.2em;
+  margin-top:6px;
+  margin-bottom: 6px;
+}
+button {
+  padding: 5px;
+  background-color: #d6c5c572;
+  color: #7d6d6d;
+  border: 2px solid rgb(24, 9, 9);
+  box-sizing: border-box;
+  cursor: pointer;
+  letter-spacing: 2px;
+  height: 25px; 
+  display: inline-block; 
+}
+
+button:hover {
+  background-color: #d2c3c3;
+}
+
